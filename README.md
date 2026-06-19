@@ -1,5 +1,5 @@
 # 🌌 Unscripted Souls
-
+![Unscripted Souls Screenshot](docs/images/unscripted-souls-alpha.png)
 > Building a living digital civilization powered by local AI.
 
 ![Status](https://img.shields.io/badge/status-active%20development-blue)
