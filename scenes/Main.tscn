@@ -1,0 +1,41 @@
+[gd_scene load_steps=9 format=3 uid="uid://c8ry5vdak17rj"]
+
+[ext_resource type="PackedScene" uid="uid://cycse4y706lkg" path="res://scenes/World.tscn" id="1_0bbpv"]
+[ext_resource type="Script" uid="uid://bli8j3e2lv8jk" path="res://core/GameManager.gd" id="2_rarhs"]
+[ext_resource type="Script" uid="uid://c6l42ev4cj58x" path="res://core/SaveSystem.gd" id="3_vcsgt"]
+[ext_resource type="Script" uid="uid://b4kp2wt2qqb7n" path="res://core/WorldClock.gd" id="4_rarhs"]
+[ext_resource type="Script" uid="uid://8xyk6at7cjou" path="res://scripts/ui/CameraFollow.gd" id="5_vcsgt"]
+[ext_resource type="PackedScene" uid="uid://dgkysdycpjkj1" path="res://scripts/ui/SimulationHUD.tscn" id="6_c01mt"]
+[ext_resource type="Script" uid="uid://t5hstnom08j3" path="res://core/AgentLightDirector.gd" id="7_nxtc6"]
+[ext_resource type="Script" uid="uid://blkjrbh57ltho" path="res://core/LightController.gd" id="8_jlsqs"]
+
+[node name="Main" type="Node"]
+
+[node name="World" parent="." instance=ExtResource("1_0bbpv")]
+position = Vector2(-135, -169.99998)
+scale = Vector2(1.635, 1.635)
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("2_rarhs")
+
+[node name="SaveSystem" type="Node" parent="."]
+script = ExtResource("3_vcsgt")
+
+[node name="WorldClock" type="Node" parent="."]
+script = ExtResource("4_rarhs")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(819, 443)
+scale = Vector2(3.015, 9.975)
+zoom = Vector2(0.595, 0.515)
+script = ExtResource("5_vcsgt")
+
+[node name="SimulationHUD" parent="." instance=ExtResource("6_c01mt")]
+
+[node name="AgentLightDirector" type="Node" parent="."]
+script = ExtResource("7_nxtc6")
+light_controller_path = NodePath("../LightController")
+
+[node name="LightController" type="Node" parent="."]
+script = ExtResource("8_jlsqs")
+access_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhYjdhMjc0NzE1ODc0ZWIyYTZhZTg3NDk1NGVjMTlmYSIsImlhdCI6MTc3NDMxMTMyNywiZXhwIjoyMDg5NjcxMzI3fQ.zc6lTrqDxhTANDVRtcARnJtGFh6V1ydQpLUm4xd5clM"

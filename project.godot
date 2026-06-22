@@ -1,0 +1,44 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Unscripted Souls"
+run/main_scene="uid://c8ry5vdak17rj"
+config/features=PackedStringArray("4.5", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+EventBus="*res://core/EventBus.gd"
+InboxSystem="*res://core/InboxSystem.gd"
+
+[display]
+
+window/size/borderless=true
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/qr_code/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://ai/": "purple",
+"res://assets/": "yellow",
+"res://core/": "pink",
+"res://data/": "green",
+"res://navigation/": "orange",
+"res://saves/": "teal"
+}
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

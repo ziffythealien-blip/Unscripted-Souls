@@ -1,0 +1,5 @@
+{
+  "initial_population": 5,
+  "day_length_minutes": 5,
+  "memory_decay_rate": 0.01
+}

@@ -1,0 +1,18 @@
+[
+  {
+	"name": "Reflective",
+	"traits": {
+	  "curiosity": 0.8,
+	  "empathy": 0.9,
+	  "existentialism": 0.7
+	}
+  },
+  {
+	"name": "Pragmatic",
+	"traits": {
+	  "curiosity": 0.5,
+	  "empathy": 0.4,
+	  "existentialism": 0.2
+	}
+  }
+]

@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgkysdycpjkj1"]
+
+[ext_resource type="Script" uid="uid://cnq7g823yocdg" path="res://scripts/ui/SimulationHUD.gd" id="1_u2abq"]
+
+[node name="SimulationHUD" type="CanvasLayer"]
+script = ExtResource("1_u2abq")
+dock_width = 390.0
+dock_right_margin_px = 18.0
+dock_top_offset_px = 6.0
+topbar_right_margin_px = 10.0
+topbar_top_margin_px = 10.0
+toast_left_margin_px = 10.0
